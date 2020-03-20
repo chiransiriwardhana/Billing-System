@@ -1,0 +1,374 @@
+<html>
+<head>
+    <title>Hospital Billing System</title>
+    <style type="text/css">
+    .style1
+    {
+        border-width:0;
+
+        width:90%;
+        height:60%;
+        border-radius:5px;
+        margin:5px auto;
+        background:rgba(0,0,0,0.7);
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+
+
+    }
+    .style2
+    {
+        border-width: 0;
+        border:solid gray 10px;
+        width: 90%;
+        border-radius: 5px;
+        margin: 5px auto;
+        background: cadetblue;
+        color: #ddd333;
+
+
+    }
+
+    .btnAdd
+    {
+        width: 101px;
+        height: 30px;
+
+        background:#3498db;
+        border-radius:10px;
+        margin:14px auto;
+        font-family:"Montserrat",sans-serif;
+        border: none;
+        font-size:16px;
+        color:white;
+        cursor:pointer;
+
+
+
+    }
+
+    .btn
+    {
+        width: 202px;
+        height: 30px;
+
+        background: gray;
+        font-size: 20px;
+
+        color: white;
+        border-radius: 10px;
+
+
+    }
+
+
+    .btnNew{
+        width: 202px;
+        height: 30px;
+        background:#3498db;
+        border-radius:10px;
+        margin:14px auto;
+        font-family:"Montserrat",sans-serif;
+        border: none;
+        font-size:16px;
+        color:white;
+        cursor:pointer;
+
+
+
+    }
+
+    .label{
+      width: 280px ;
+      height:30px;
+      border:none ;
+      background:#f1f1f1b3;
+      font-family:"Montserrat",sans-serif;
+      text-align:"center";
+      font-size:14px;
+      border-radius:5px;
+    }
+
+
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        text-align:center;
+        font-size:12px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align:center;
+        font-size:12px;
+    }
+
+
+    .cbtn
+    {
+            width: 50px;
+            height:40px;
+            background:#3498db;
+        border-radius:10px;
+        margin:14px auto;
+        font-family:"Montserrat",sans-serif;
+        border: none;
+        font-size:16px;
+        color:white;
+        cursor:pointer;
+
+    }
+    .tbox{
+        width: 280px ;
+        height:30px;
+        border:none ;
+        background:#f1f1f1b3;
+        font-family:"Montserrat",sans-serif;
+        text-align:"center";
+        font-size:14px;
+        border-radius:5px;
+
+    }
+    .addressText{
+        width: 280px ;
+        height:80px;
+        border:none;
+        background:#f1f1f1b3;
+        font-family:"Montserrat",sans-serif;
+
+        font-size:14px;
+        border-radius:5px;
+    }
+
+    body{
+      background:url('healthyimage_five.jpg') no-repeat top center;
+      background-size:cover;
+
+    }
+
+
+    </style>
+
+</head>
+<body bgcolor = "#5F9EA0">
+
+     <center>
+        <b><font color="black" style="font-size:50">Billing System</font></b>
+    </center>
+
+     <div>
+        <table class ="style1" width="700px"  >
+            <tr>
+                <td>
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+                <table width="700px" cellpadding="10px" >
+
+
+                <tr>
+                <td><font color="white">First Name:</font></td>
+                    <td>
+                        <input type="text" name="first_name" placeholder="First Name" class="tbox">
+                    </td>
+                </tr>
+
+
+                <tr>
+                <td><font color="white">Surname:</font></td>
+                    <td>
+                        <input type="text" name="surname" placeholder="Surname" class="tbox" >
+                    </td>
+                </tr>
+
+
+                <tr>
+                <td><font color="white">Date Of Birth:</font></td>
+                    <td>
+                        <input type="text" name="date_of_birth" placeholder="Date Of Birth" class="tbox">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Gender:</font></td>
+                    
+                    <td>
+                        <input type="radio" name="gender" value="male">  <label for="gender" style="color:white;">Male</label>
+                        <input type="radio" name="gender" value="female"><label for="gender" style="color:white;">Female</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Telephone:</font>:</td>
+                    <td>
+                        <input type="text" name="telephone" placeholder="Telephone" class="tbox">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td><font color="white">E-mil:</font></td>
+                    <td>
+                        <input type="text" name="e-mail" placeholder="E-mail" class="tbox">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Address:</font></td>
+                    <td>
+                        <input type="text" name="address" class="addressText">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td><font color="white">City:</font></td>
+                    <td>
+                        <input type="text" name="city" placeholder="City" class="tbox">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td style="width: 250px"></td><td align="left" style="width: 400px"><input type="reset" name= "reset" value="Reset" class='btnNew'></td>
+                </tr>
+  </table>
+
+
+                <td>
+                <table  width="700px " cellpadding="4px">
+
+
+
+                <tr>
+                    <td><font color="white">Reference No :</font></td>
+                    <td>
+                        <input type="text" id="reference_no" class="tbox" >
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td><font color="white">Appointment On:</font></td>
+                    <td>
+                        <input type="Date" id="appointment_on" class="tbox" >
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td><font color="white">Appointment No:</font></td>
+                    <td>
+                        <input type="text" id="appointment_no" class="tbox" >
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td><font color="white">Room No:</font></td>
+                    <td>
+                        <input type="text" id="room_no" class="tbox" >
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Consultant:</font></td>
+                    <td>
+                        <input type="text" id="consultant" class="tbox" >
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Cashier :</font></td>
+                    <td>
+                        <input type="text" id="cashier" class="tbox" >
+                    </td>
+                </tr>
+
+
+
+             
+                <tr>
+                    <td style="width: 480px"><font color="white"><b>Total Cost:</b></font></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><font color="white">Hospital Fee Rs :</font></td>
+                    <td>
+                        <input type="text" id="hospital_fee" class="tbox" value="">
+
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><font color="white">Consultant Fee Rs :</font></td>
+                    <td>
+                        <input type="text" id="consultent_fee" class="tbox"  >
+                    </td>
+                </tr>
+
+
+                <tr>
+
+
+                    <td>
+                        <input type="button" onclick="calculateFinalPayment()" value="Total"  class="btnAdd">
+                    </td>
+                    <td><font color="white">Total Rs :<label id='display' ></label></font></td>
+                </tr>
+
+
+                    <td><font color="white">Final Payment Rs :</font></td>
+                    <td>
+                        <input type="text" name="final payment" class="tbox" value="">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td align="left" style="width: 400px">
+                    <input type="submit" value="Submit" name='add' class='btnNew'></td>
+                </tr>
+</table>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+
+function calculateFinalPayment(){
+
+
+    var hospital_fee = parseInt(document.getElementById("hospital_fee").value);
+    var consultent_fee= parseInt(document.getElementById("consultent_fee").value);
+    hospital_fee=hospital_fee||0;
+    consultent_fee=consultent_fee||0;
+    var subtotal=0;
+    
+    if(consultent_fee==0|| hospital_fee ==0 ){
+
+      alert("Please enter non zero values");
+    }
+    else{
+
+        subtotal=hospital_fee+consultent_fee;
+        document.getElementById('display').innerHTML= subtotal;
+ 
+
+    }
+}
+
+</script>
+</body>
+</html>
