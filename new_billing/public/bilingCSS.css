@@ -1,0 +1,181 @@
+ .style1
+ {
+    border-width:0;
+
+    width:90%;
+    height:60%;
+    border-radius:5px;
+    margin:5px auto;
+
+    background:rgba(0,0,0,0.8);
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+
+
+}
+.style2
+{
+    border-width: 0;
+    border:solid gray 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin: 5px auto;
+    background: cadetblue;
+    color: #ddd333;
+
+
+}
+
+.btnAdd
+{
+    width: 101px;
+    height: 30px;
+
+    background:#3498db;
+    border-radius:10px;
+    margin:14px auto;
+    font-family:"Montserrat",sans-serif;
+    border: none;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+
+
+
+}
+
+.btn
+{
+    width: 202px;
+    height: 30px;
+
+    background: gray;
+    font-size: 20px;
+
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+
+.btnNew{
+    width: 202px;
+    height: 30px;
+    background:#3498db;
+    border-radius:10px;
+    margin:14px auto;
+    font-family:"Montserrat",sans-serif;
+    border: none;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+
+
+
+}
+
+.label{
+  width: 280px ;
+  height:30px;
+  border:none ;
+
+
+  font-family:"Montserrat" ,sans-serif;
+  text-align:"center";
+  font-size:14px;
+  border-radius:5px;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align:center;
+    font-size:12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    text-align:center;
+    font-size:12px;
+}
+
+
+
+
+.cbtn
+{
+    width: 50px;
+    height:40px;
+    background:#3498db;
+    border-radius:10px;
+    margin:14px auto;
+    font-family:"Montserrat",sans-serif;
+    border: none;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+
+}
+.tbox{
+    width: 280px ;
+    height:30px;
+    border:none ;
+    background:#f1f1f1b3 ;
+    font-family:"Montserrat",sans-serif;
+    text-align:"center";
+    font-size:14px;
+    border-radius:5px;
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 0px  #f1f1f1b3 inset;
+}
+.addressText{
+    width: 280px ;
+    height:80px;
+    border:none;
+    background:#f1f1f1b3;
+    font-family:"Montserrat",sans-serif;
+
+    font-size:14px;
+    border-radius:5px;
+}
+
+
+
+
+
+body{
+
+background:linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3) ),url('image_12.jpg')no-repeat top center ;
+  background-size:cover;
+}
+
+
+
+#confirm {
+            display: none;
+            background-color: #514E61;
+            color: #FFFFFF;
+            border: 1px solid #aaa;
+            position: fixed;
+            width: 250px;
+            left: 50%;
+            top:50%;
+            margin-left: -100px;
+            padding: 6px 8px 8px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+         #confirm button {
+            background-color: #48E5DA;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            padding: 5px;
+            text-align: center;
+            width: 80px;
+            cursor: pointer;
+         }
+         #confirm .message {
+            text-align: left;
+         }

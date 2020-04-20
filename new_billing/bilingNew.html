@@ -1,0 +1,215 @@
+<html>
+<head>
+    <title>Hospital Billing System</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bilingCSS.css">
+
+</head>
+<body >
+    <div id="prompt">
+    <center>
+        <b><font color="black" style="font-size:50">Billing System</font></b>
+    </center>
+
+    <div >
+        <table class ="style1" width="700px"  >
+            <tr>
+                <td>
+
+
+                  <form method="post" autocomplete="off" action="/api/activities" id="target">
+
+                    <table width="700px" cellpadding="10px" >
+
+
+                        <tr>
+                            <td><font color="white">First Name:</font></td>
+                            <td>
+                                <input type="text" id="first_name" name="firstName" placeholder="First Name" class="tbox">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">Surname:</font></td>
+                            <td>
+                                <input type="text" id="surname_" name="surname" placeholder="Surname" class="tbox" >
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">Date Of Birth:</font></td>
+                            <td>
+                                <input type="Date" id="date_of_birth" name="dateOfBirth" placeholder="Date Of Birth" class="tbox">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">Gender:</font></td>
+
+                            <td>
+                                <input type="radio" name="gender" value="male" > <label for="gender" style="color:rgb(153, 156, 158);">Male </label>
+                                <input type="radio" name="gender" value="female"><label for="gender" style="color:rgb(153, 156, 158);">Female</label>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">Telephone:</font>:</td>
+                            <td>
+                                <input type="text" id="telephone_"  name="telephone" placeholder="Telephone" class="tbox">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">E-mil:</font></td>
+                            <td>
+                                <input type="text" id="e_mail_" name="e_mail" placeholder="E-mail" class="tbox">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">Address:</font></td>
+                            <td>
+                                <input type="text" id="address_" name="address" class="addressText">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><font color="white">City:</font></td>
+                            <td>
+                                <input type="text" id="city_" name="city" placeholder="City" class="tbox">
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td style="width: 250px"></td><td align="left" style="width: 400px"><input type="reset" name= "reset" value="Reset" class='btnNew'></td>
+                        </tr>
+                    </table>
+
+
+                    <td>
+                        <table  width="700px " cellpadding="4px">
+
+
+
+                            <tr>
+                                <td><font color="white">Reference No :</font></td>
+                                <td>
+                                    <input type="text" id="reference_no" name="referenceNo" class="tbox" >
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td><font color="white">Appointment On:</font></td>
+                                <td>
+                                    <input type="Date" id="appointment_on" name="appointmentOn" class="tbox" >
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td><font color="white">Appointment No:</font></td>
+                                <td>
+                                    <input type="text" id="appointment_no" name="appointmentNo" class="tbox" >
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td><font color="white">Room No:</font></td>
+                                <td>
+                                    <input type="text" id="room_no" name="roomNo" class="tbox" >
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><font color="white">Consultent:</font></td>
+                                <td>
+                                    <input type="text" id="consultent_" name="consultent" class="tbox" >
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><font color="white">Cashier :</font></td>
+                                <td>
+                                    <input type="text"  id="cashier_" name="cashier" class="tbox" >
+                                </td>
+                            </tr>
+
+
+
+                          <!--  <tr>
+                                <td style="width: 480px"><font color="rgb(153, 156, 158)"><b>Total Cost:</b></font></td>
+                            </tr>
+                          -->
+
+
+                            <tr>
+                                <td><font color="white">Hospital Fee Rs :</font></td>
+                                <td>
+                                    <input type="text" id="hospital_fee" name="hospitalFee" class="tbox"  value="">
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><font color="white">Consultant Fee Rs :</font></td>
+                                <td>
+                                    <input type="text" id="consultent_fee" name="consultantFee" class="tbox"  >
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <input type="button" onclick="calculateFinalPayment()" value="Total"  class="btnAdd">
+                                </td>
+                                <td><font color="white">Total Rs :<label id='display' ></label></font></td>
+                            </tr>
+
+                            <tr>
+                                <td><font color="white">Final Payment :</font></td>
+                                <td>
+                                    <input type="text" id="c_" name="C" class="tbox" >
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="submit"   value="Submit" id='add' name="Add"  class='btnNew'/></td>
+                            </tr>
+
+                        </table>
+
+                    </td>
+                </div>
+            </div>
+
+            <div id="confirm">
+            <div class="message">This is a warning message.</div>
+            <button class="yes">OK</button>
+            </div>
+
+            <script src="jquery.js"></script>
+            <script src="submit.js"></script>
+            <script src="bilingFunction.js"></script>
+
+        </body>
+        </html>
