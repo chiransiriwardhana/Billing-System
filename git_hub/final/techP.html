@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>tech-patient page</title>
+<!--  <link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons/search-location?style=solid">-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<link rel="stylesheet" type="text/css"href="tcss.css">
+
+</head>
+<body>
+<div id="container">
+   <div class="Top" id="header">
+     <!--<img src="user.png "id="icon">-->
+     <label>Techinician Page</label>
+     <div id="search-box">
+       <input  type="text" id="searchInput" name="" placeholder="Type to search patients">
+       <a class="search-btn" href="#">
+          <i class="fas fa-search-location"></i></a>
+    </div>
+   </div>
+   <div id="patients">
+     <label>Kamal Dissanayake</label>
+     
+     <img src="info.png" id="info_icon"/>
+      <label class="info_label">patient information</label>
+      
+    
+     <table >
+      <!--<thead>
+         <tr>
+           <th></th>
+           <th></th>
+         </tr>
+       </thead>-->
+       <tbody id="tableData">
+
+    </tbody>
+    </table>
+
+
+
+
+
+
+   </div>
+
+   <div id="upload" class="upload_">
+     <label id="patient" >patient</label>
+
+
+     <input type=text id="name" placeholder="Enter patient name"><br>
+
+
+
+
+     <label id="report">Report</label>
+
+     <form id="dropFileForm" action="/upload" method="POST"  enctype="multipart/form-data" onsubmit="uploadFiles(event)">
+       <input type="file" name="uploadedFile" id="fileInput" multiple onchange="addFiles(event)" />
+
+       <label for="fileInput" id="fileLabel" ondragover="overrideDefault(event);fileHover();" ondragenter="overrideDefault(event);fileHover();" ondragleave="overrideDefault(event);fileHoverEnd();" ondrop="overrideDefault(event);fileHoverEnd();
+             addFiles(event);">
+         <i class="fa fa-download fa-5x"></i>
+         <br>
+         <span id="fileLabelText">
+           Choose a file or drag it here
+         </span>
+         <br>
+         <span id="uploadStatus"></span>
+       </label>
+
+       <input type="submit"value="Upload" class="uploadButton">
+     </form>
+
+
+
+
+
+
+
+   </div>
+</div>
+<script type="text/javascript" src="up.js">
+</script>
+</body>
+</html>

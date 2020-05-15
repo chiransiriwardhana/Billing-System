@@ -1,0 +1,11 @@
+#upload{
+    position: absolute;
+  
+    right: 0%;
+    top:14%;
+    width:70%;
+    height:86%;
+    border-radius: 0 0  10px 0;
+    background:  #F8F9F9 ;
+
+}

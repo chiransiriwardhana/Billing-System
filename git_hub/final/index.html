@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Technician page</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!--<link rel="stylesheet" type="text/css"href="t.css">-->
+
+<style >
+#dropFileForm {
+  position: absolute;
+  margin: 16px;
+  top:50%;
+  left:50%;
+  width:50%;
+  height:50%;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#dropFileForm #fileLabel {
+  background-color: rgba(0, 255, 0, 0.5);
+  display: block;
+  padding: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+#dropFileForm #fileInput {
+  display: none;
+}
+
+#dropFileForm #fileLabel:after,
+#dropFileForm #fileLabel:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: -2;
+  border-radius: 8px 8px 0 0;
+}
+
+#dropFileForm #fileLabel:before {
+  z-index: -1;
+  background: repeating-linear-gradient(45deg,transparent,transparent 5%,black 5%,black 10%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#dropFileForm.fileHover #fileLabel:before {
+  opacity: 0.25;
+}
+
+#dropFileForm .uploadButton {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: limeGreen;
+  color: #fff;
+  cursor: pointer;
+}
+
+#dropFileForm.fileHover {
+  box-shadow: 0 0 16px limeGreen;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+<form id="dropFileForm" action="/upload" method="POST"  enctype="multipart/form-data" onsubmit="uploadFiles(event)">
+  <input type="file" name="uploadedFile" id="fileInput" multiple onchange="addFiles(event)" />
+  <!--<input type="text" name="name" placeholder="File name.."/><br/>-->
+  <label for="fileInput" id="fileLabel" ondragover="overrideDefault(event);fileHover();" ondragenter="overrideDefault(event);fileHover();" ondragleave="overrideDefault(event);fileHoverEnd();" ondrop="overrideDefault(event);fileHoverEnd();
+        addFiles(event);">
+    <i class="fa fa-download fa-5x"></i>
+    <br>
+    <span id="fileLabelText">
+      Choose a file or drag it here
+    </span>
+    <br>
+    <span id="uploadStatus"></span>
+  </label>
+
+  <input type="submit"value="Upload" class="uploadButton">
+</form>
+<!--
+<form action="/download" method="GET">
+<input type="submit" value="download file"/>
+</form>
+
+-->
+
+<script type="text/javascript" src="upload.js">
+</script>
+
+
+
+</body>
+
+</html>
