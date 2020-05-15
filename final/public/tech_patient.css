@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    width: 100%;
+    background:linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3) ),url('image_12.jpg')no-repeat top center ;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+#container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 80%;
+    background:rgb(255,255,255);
+    border-radius: 10px;
+}
+
+#header{
+    position: absolute;
+    top:0%;
+    height:14%;
+    width: 100%;
+    background: rgb(51, 198, 255);
+    border-radius: 10px 10px 0 0;
+}
+
+#icon{
+    width:40px;
+    height:40px;
+    border-radius:20%;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+.Top label{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+
+#search-box{
+    position: absolute;
+    top:10px;
+    left:20px;
+    background: #f1f1f1b3;
+
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+
+
+  }
+  #search-box search-btn
+  {
+    color:#1da1f3;
+    float:right;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  #search-box:hover > input[type="text"]
+  {
+    width:240px;
+    padding: 0 6px;
+  }
+
+  .search-box:hover> search-btn
+  {
+    background: white;
+  }
+
+#search-box input[type=text]{
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 30px;
+    width:200px;
+    transition: 0.4s;
+
+  }
+#upload{
+    position: absolute;
+
+    right: 0%;
+    top:14%;
+    width:70%;
+    height:86%;
+    border-radius: 0 0  10px 0;
+
+
+}
+
+#patients{
+    position: absolute;
+    left:0%;
+    top:14%;
+    width:30%;
+    height:86%;
+    border-radius: 0 0 0 10px;
+  
+    background:#195e83
+  }
+
+  #p_name{
+    position: absolute;
+    left:30%;
+    top:8%;
+    font-size: 20px;
+    font-family: Montserrat ,sans-serif;
+
+
+
+  }
+
+
+  #info_label{
+
+    position: absolute;
+    top: 15%;
+    left: 18%;
+
+  }
+
+  #info_icon{
+    position: absolute;
+    top:15%;
+    float: left;
+    margin-left: 24px;
+    width:20px;
+	height:20px;
+	border-radius:20%;
+
+  }
+
+  #city{
+    position: absolute;
+    top:22%;
+    left:22%;
+
+  }
+
+  #address{
+
+    position: absolute;
+    top:29%;
+    left:22%;
+  }
+
+  #e_mail{
+
+    position: absolute;
+    top:36%;
+    left:22%;
+
+  }
+
+
+
+
+  #report_icon{
+    position: absolute;
+    top:50%;
+    float: left;
+    margin-left: 24px;
+    width:20px;
+	height:20px;
+	border-radius:20%;
+
+  }
+  #report_label{
+   position: absolute;
+  top: 50%;
+  left: 18%;
+
+
+  }
+
+  #info_table{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    widows: 80%;
+    height:30%;
+    background: green;
+  }
+
+  #patients table{
+    position: absolute;
+    top: 35%;
+    font-family: Montserrat ,sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #patients td{
+
+    padding: 5px;
+
+
+  }
+
+#patient_name{
+  position: absolute;
+  left: 5%;
+  top:12%;
+  font-family: Montserrat,sans-serif;
+}
+
+
+
+
+.input_with_icon input[type=text]{
+  padding-top: 2px;
+  padding-left: 40px;
+
+}
+
+.input_with_icon{
+
+  position: absolute;
+  left: 22%;
+  top: 12%;
+  width:50%;
+ height: 10%;
+}
+
+
+
+
+#patient_name_input{
+  width:100%;
+  height: 80%;
+  outline: none;
+  font-family: Montserrat , sans-serif;
+
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px ;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+
+#patient_name_button{
+  position: absolute;
+  left: 72%;
+  top:12%;
+  width: 20%;
+  height: 8%;
+  font-family: Montserrat,sans-serif;
+  background-color:  rgb(51, 198, 255);
+  color: white;
+  outline: none;
+  border:none;
+  border-radius: 0 4px 4px 0 ;
+ 
+}
+
+#report{
+    position: absolute;
+    left:5%;
+    top:25%;
+    font-family: Montserrat ,sans-serif;
+    }
+
+
+#dropFileForm {
+    position: absolute;
+    top:30%;
+    left:22%;
+    width:70%;
+    height:60%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    }
+
+    #dropFileForm #fileLabel {
+
+      display: block;
+      padding: 60px;
+      position: relative;
+      cursor: pointer;
+      border-radius: 8px;
+      border: 2px dashed rgb(51, 198, 255);;
+    }
+
+    #dropFileForm #fileInput {
+      display: none;
+    }
+
+    #dropFileForm #fileLabel:after,
+    #dropFileForm #fileLabel:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: -2;
+      border-radius: 8px 8px 0 0;
+    }
+
+    #dropFileForm #fileLabel #fileLabelText{
+      color: #85929E;
+    }
+
+    #dropFileForm #fileLabel:before {
+      z-index: -1;
+      background: repeating-linear-gradient(45deg,transparent,transparent 5%,black 5%,black 10%);
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    #dropFileForm.fileHover #fileLabel:before {
+      opacity: 0.25;
+    }
+
+    #dropFileForm .uploadButton {
+      position: absolute;
+    top:78%;
+    right: 5px;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    padding: 8px;
+    background-color:  rgb(51, 198, 255);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+    #dropFileForm.fileHover {
+      box-shadow: 0 0 16px dodgerblue;
+    }
