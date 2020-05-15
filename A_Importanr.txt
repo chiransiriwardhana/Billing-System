@@ -1,0 +1,2 @@
+All modules of SE project is in SE_Project and technician_login folder. final folder is also in SE_project folder.
+duplicated technician_login folder is also in SE_Project folder
