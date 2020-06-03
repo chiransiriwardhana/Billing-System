@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="sign_up.css">
+    </head>
+    <body>
+       <div class="wrapper">
+                    <!--<div class="header-area">
+                    <h2>ff</h2>
+                     <p>ff</p>
+                    </div>
+                    <div class="s_area">
+                    <i class="fafa-dribbble"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-twitter"></i>
+                    </div>-->
+     
+            <div class="header">
+                    <label>Sign up and enter edit details</label>
+            </div>
+            <form action="/sign_up" method="post" id="form-area">
+            <div class="out">
+                    <div class="title_"><label> Edit Your information</label></div>
+                  
+                    <div class="info" >
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Enter First name" name="f_name">
+                        <i class="fa fa-user"></i>
+               
+                        <input type="text" placeholder="Enter last name" name="l_name">
+                        <i class="fad fa-birthday-cake"></i>
+                        <input type="date" placeholder="Enter birth date" name=b_date>
+                        <!--<i class="fa fa-user"></i>
+                        <input type="text" placeholder="Enter role type">-->
+                        
+                        <label for="doctor_type">If you are doctor, enter doctor type id</label>
+                        <select name="doctor_type" id="doctor_type">
+                            <option value="None">None</option>
+                            <option value="Consultant">Consultant</option>
+                        </select>
+                       
+
+
+
+
+                        <!--<input type="submit" value="Update Profile">-->
+                    </div>
+                    <div class="choice">
+
+                        <label for="role_type">Choose your role type</label>
+                        <select name="role_type" id="role_type">
+                            <option value="Doctor">Doctor</option>
+                            <option value="Technician">Technician</option>
+                            <option value="Receptionist">Receptionist</option>
+
+                        </select>
+                        
+
+                        
+
+
+
+                    <!--<label id="doc_id">If you are doctor, enter doctor type id</label>
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter role type">-->
+                </div>
+                
+            </div>
+            <div class="sign_up_form">
+           <div class="form-area" id="form_area">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" placeholder="Enter Username">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Enter Email Address" name="email">
+                     <i class="fa fa-key"></i>
+                    <input type="password" name="password" placeholder="Enter pasword">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="confirm" placeholder="Confirm Password">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" placeholder="Enter Phone Number" name="phone_number">
+                    <!--<i class="fa fa-phone"></i>
+                    <input type="text" placeholder="Enter Birth-date">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" placeholder="Enter role type">-->
+                    <!--<input type="checkbox">
+                    <p class="terms">I will Obey Terms and Conditions</p>-->
+                    <input type="submit" value="Signup">
+
+                    </div>
+
+            </div>
+            </form>
+
+
+      
+         
+        </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="upload_info.js"></script>
+</html>
