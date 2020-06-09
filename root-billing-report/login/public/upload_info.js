@@ -1,0 +1,11 @@
+$('#form-area').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url:'/sign_up',
+        type:'post',
+        data:$('#form-area').serialize(),
+        success:function(res){
+            alert(res)
+        }
+    })
+})
