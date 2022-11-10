@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "mocha": "^7.1.2"
+    "mocha": "^10.1.0"
   },
   "scripts": {
     "test": "mocha"
